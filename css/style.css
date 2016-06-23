@@ -83,6 +83,9 @@ header .bgMenu {
 
 .linksMenu.showMenu {
   display: block;
+  background-color: #148dcd;
+  padding-top: 2em;
+  margin-top: -2.25em;
 }
 
 .linksMenu a {
@@ -100,8 +103,7 @@ header .bgMenu {
 
 .linksMenu li:nth-child(1) a {
   background-color: #148dcd;
-  padding-top: 2em;
-  margin-top: -1.45em;
+  /* margin-top: -1.45em; */
 }
 
 .linksMenu li:nth-child(2) a {
