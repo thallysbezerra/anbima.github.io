@@ -1,0 +1,152 @@
+/* Tasty Burger Menu */
+
+.burgerMenu {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #148dcd;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 15px;
+}
+
+.burger {
+  top: 22px;
+  right: 10px;
+  opacity: 1;
+}
+
+.burger::before {
+  top: 10px;
+  content: "";
+  display: block;
+}
+
+.burger::after {
+  bottom: 10px;
+  content: "";
+  display: block;
+}
+
+.burger::after, .burger::before, .burger {
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 29px;
+  height: 5px;
+  position: absolute;
+}
+
+.burgerMenu.showMenu .burger::after{
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+  bottom: 0px;
+}
+
+.burgerMenu.showMenu .burger::before{
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+  top: 0px;
+}
+
+.burgerMenu.showMenu .burger{
+ background: rgba(111,111,111,.0);
+}
+
+/* Header */
+
+header .bgMenu {
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.navMenu {
+  z-index: -1;
+  position: relative;
+}
+
+.navMenu.fadeInDown {
+  animation-duration: .5s;
+}
+
+.linksMenu {
+  display: none;
+  list-style: none;
+  margin: -4px 0 0;
+  padding: 0;
+}
+
+.linksMenu.showMenu {
+  display: block;
+}
+
+.linksMenu a {
+  color: #fff;
+  text-align: left;
+  font: 1.5em Oswald;
+  padding: .8em;
+  display: block;
+  text-decoration: none;
+}
+
+.linksMenu a:before {
+  margin: 0 1em 0 .25em;
+}
+
+.linksMenu li:nth-child(1) a {
+  background-color: #148dcd;
+  padding-top: 2em;
+  margin-top: -1.45em;
+}
+
+.linksMenu li:nth-child(2) a {
+  background-color: #1381bb;
+}
+
+.linksMenu li:nth-child(3) a {
+  background-color: #1070a4;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+
+  header .bgMenu {
+    background-color: #148dcd;
+  }
+    
+  .burgerMenu {
+      display: none;
+  }
+
+  .navMenu {
+      z-index: 0;
+  }
+
+  .linksMenu {
+      display: block;
+      text-align: center;
+  }
+
+  .linksMenu li {
+      display: inline-block;
+  }
+
+  .navMenu .linksMenu li a {
+      background-color: transparent;
+      color: #0c547b;
+      padding: 22px 1.2em 24px .8em;
+      transition: .25s;
+  }
+
+  .navMenu .linksMenu li a:hover {
+      color: #fff;
+  }
+
+}
+
