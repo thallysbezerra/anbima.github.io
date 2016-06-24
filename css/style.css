@@ -1,3 +1,189 @@
+/* Global */
+
+body {
+  background-color: #eee;
+}
+
+h1 {
+  color: #333;
+  font: 50px Oswald;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h2.functionPerson {
+   color: #148dcd;
+   font: 30px Oswald;
+   margin-top: -5px;
+}
+
+.namePerson,
+.functionPerson,
+.infoPerson p {
+  display: none;
+}
+
+.bounceInLeft {
+  display: block !important;
+}
+
+/* Header */
+
+header .bgMenu {
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+header.fixedMenu {
+    position: fixed;
+    width: 100%;
+}
+
+.navMenu {
+  z-index: -1;
+  position: relative;
+}
+
+.navMenu.fadeInDown {
+  animation-duration: .5s;
+}
+
+.linksMenu {
+  display: none;
+  list-style: none;
+  margin: -4px 0 0;
+  padding: 0;
+}
+
+.linksMenu.showMenu {
+  display: block;
+  background-color: #148dcd;
+  padding-top: 2em;
+  margin-top: -2.25em;
+}
+
+.linksMenu a {
+  color: #fff;
+  text-align: left;
+  font: 1.5em Oswald;
+  padding: .8em;
+  display: block;
+  text-decoration: none;
+}
+
+.linksMenu a:before {
+  margin: 0 1em 0 .25em;
+}
+
+.linksMenu li:nth-child(1) a {
+  background-color: #148dcd;
+  /* margin-top: -1.45em; */
+}
+
+.linksMenu li:nth-child(2) a {
+  background-color: #1381bb;
+}
+
+.linksMenu li:nth-child(3) a {
+  background-color: #1070a4;
+}
+
+.bgShade.fadeIn,
+.bgShade.fadeOut {
+    background-color: rgba(0,0,0,.75);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+/* Main */
+
+main {
+  position: absolute;
+  top: 81px;
+  z-index: -1;
+}
+
+.figureProfile img {
+  display: none;
+}
+
+.figureProfile.animated.zoomInUp img {
+  border: 8px solid #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.infoPerson {
+  text-align: center;
+}
+
+.infoPerson p {
+  color: #333;
+  font: 18px Source Sans Pro;
+  text-align: left;
+  margin: .5em auto;
+  position: relative;
+  width: 200px;
+  left: .5em;
+}
+
+.infoPerson p:before {
+  position: absolute;
+  left: -1.5em;
+}
+
+.infoPerson p.fa-linkedin-square:before {
+  left: -1.45em;
+}
+
+.infoPerson p.fa-map-marker:before {
+  left: -1.4em;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+
+  header .bgMenu {
+    background-color: #148dcd;
+  }
+    
+  .burgerMenu {
+      display: none;
+  }
+
+  .navMenu {
+      z-index: 0;
+  }
+
+  .linksMenu {
+      display: block;
+      text-align: center;
+  }
+
+  .linksMenu li {
+      display: inline-block;
+  }
+
+  .navMenu .linksMenu li a {
+      background-color: transparent;
+      color: #0c547b;
+      padding: 22px 1.2em 24px .8em;
+      transition: .25s;
+  }
+
+  .navMenu .linksMenu li a:hover {
+      color: #fff;
+  }
+
+}
+
 /* Tasty Burger Menu */
 
 .burgerMenu {
@@ -53,102 +239,5 @@
 
 .burgerMenu.showMenu .burger{
  background: rgba(111,111,111,.0);
-}
-
-/* Header */
-
-header .bgMenu {
-  height: 80px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  box-sizing: border-box;
-  text-align: right;
-}
-
-.navMenu {
-  z-index: -1;
-  position: relative;
-}
-
-.navMenu.fadeInDown {
-  animation-duration: .5s;
-}
-
-.linksMenu {
-  display: none;
-  list-style: none;
-  margin: -4px 0 0;
-  padding: 0;
-}
-
-.linksMenu.showMenu {
-  display: block;
-  background-color: #148dcd;
-  padding-top: 2em;
-  margin-top: -2.25em;
-}
-
-.linksMenu a {
-  color: #fff;
-  text-align: left;
-  font: 1.5em Oswald;
-  padding: .8em;
-  display: block;
-  text-decoration: none;
-}
-
-.linksMenu a:before {
-  margin: 0 1em 0 .25em;
-}
-
-.linksMenu li:nth-child(1) a {
-  background-color: #148dcd;
-  /* margin-top: -1.45em; */
-}
-
-.linksMenu li:nth-child(2) a {
-  background-color: #1381bb;
-}
-
-.linksMenu li:nth-child(3) a {
-  background-color: #1070a4;
-}
-
-/* Media Queries */
-
-@media screen and (min-width: 800px) {
-
-  header .bgMenu {
-    background-color: #148dcd;
-  }
-    
-  .burgerMenu {
-      display: none;
-  }
-
-  .navMenu {
-      z-index: 0;
-  }
-
-  .linksMenu {
-      display: block;
-      text-align: center;
-  }
-
-  .linksMenu li {
-      display: inline-block;
-  }
-
-  .navMenu .linksMenu li a {
-      background-color: transparent;
-      color: #0c547b;
-      padding: 22px 1.2em 24px .8em;
-      transition: .25s;
-  }
-
-  .navMenu .linksMenu li a:hover {
-      color: #fff;
-  }
-
 }
 
