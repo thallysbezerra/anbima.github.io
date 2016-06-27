@@ -155,7 +155,7 @@ main {
     background-color: #148dcd;
   }
     
-  .burgerMenu {
+  div.burgerMenu {
       display: none;
   }
 
