@@ -61,14 +61,12 @@ $('.anchor').click(function() {
     return false;
 });
 
-$(window).scroll(function() {
-    if ($(scroll).scrollTop() > 100) {
-        $(".linkHeader").stop().animate({
-            opacity: 1
-        }, 250);
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".linkHeader").addClass("show");
     } else {
-        $(".linkHeader").stop().animate({
-            opacity: 0
-        }, 250);
+        $(".linkHeader").removeClass("show");
     }
 });
