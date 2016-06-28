@@ -189,7 +189,7 @@ section:nth-child(even) {
   bottom: 0;
   right: 0;
   margin: 15px;
-  background-color: rgba(170,170,170,.25);
+  background-color: rgba(170,170,170,.15);
   opacity: 0;
   visibility: hidden;
   transition: .25s;
@@ -274,7 +274,7 @@ section:nth-child(even) {
   }
 
   .linkHeader:hover {
-    background-color: rgba(20,141,205,.25);
+    background-color: rgba(20,141,205,.15);
   }
 
   .linkHeader:hover:before {
