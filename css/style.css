@@ -191,7 +191,13 @@ section:nth-child(even) {
   margin: 15px;
   background-color: rgba(170,170,170,.25);
   opacity: 0;
+  visibility: hidden;
   transition: .25s;
+}
+
+.linkHeader.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .linkHeader:before {
