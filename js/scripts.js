@@ -29,9 +29,9 @@ $(".burgerMenu").click(function() {
     if (isEven(count) === false) {
         $("header").addClass("fixedMenu"); // Fixed menu on top
         $(".burgerMenu").addClass("showMenu"); // X button on menu
-    $(".linksMenu").addClass("showMenu"); // Open menu links
-    $(".navMenu").removeClass("bounceOutUp"); // Effect bounceOutUp on nav
-    $(".navMenu").addClass("bounceInDown"); // Effect bounceInDown on nav
+        $(".linksMenu").addClass("showMenu"); // Open menu links
+        $(".navMenu").removeClass("bounceOutUp"); // Effect bounceOutUp on nav
+        $(".navMenu").addClass("bounceInDown"); // Effect bounceInDown on nav
         $(".bgShade").removeClass("fadeOut"); // Cancel fffect fadeOut on shade
         $(".bgShade").addClass("fadeIn"); // Start Effect fadeIn on shade
     }
@@ -43,5 +43,32 @@ $(".burgerMenu").click(function() {
         $(".navMenu").addClass("bounceOutUp"); // Effect bounceOutUp on nav
         $(".bgShade").removeClass("fadeIn"); // Cancel effect fadeIn on shade
         $(".bgShade").addClass("fadeOut"); // Start effect fadeOut on shade
+    }
+});
+
+var $anchor = $('html, body');
+$('.anchor').click(function() {
+    $("header").removeClass("fixedMenu"); // Remove fixed menu on top
+    $(".burgerMenu").removeClass("showMenu"); // Burger button on menu
+    $(".navMenu").removeClass("bounceInDown"); // Effect bounceInDown on nav
+    $(".navMenu").addClass("bounceOutUp"); // Effect bounceOutUp on nav
+    $(".bgShade").removeClass("fadeIn"); // Cancel effect fadeIn on shade
+    $(".bgShade").addClass("fadeOut"); // Start effect fadeOut on shade
+    count++;
+    $anchor.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
+$(window).scroll(function() {
+    if ($(scroll).scrollTop() > 100) {
+        $(".linkHeader").stop().animate({
+            opacity: 1
+        }, 250);
+    } else {
+        $(".linkHeader").stop().animate({
+            opacity: 0
+        }, 250);
     }
 });

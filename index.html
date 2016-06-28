@@ -14,32 +14,65 @@
 </head>
 <body>
   <div class="bgShade animated"></div>
-  <header class="animated">
+
+  <header id="header" class="animated">
     <div class="bgMenu">
       <div class="burgerMenu">
         <div class="burger"></div>
       </div>
       <nav class="navMenu animated ">
         <ul class="linksMenu">
-          <li><a href="#" class="fa fa-file-text">Resume</a></li>
-          <li><a href="#" class="fa fa-suitcase">Works</a></li>
-          <li><a href="#" class="fa fa-phone">Contact</a></li>
+          <li><a href="#sectionResume" class="linkResume fa fa-file-text anchor">Resume</a></li>
+          <li><a href="#sectionWorks" class="linkWorks fa fa-suitcase anchor">Works</a></li>
+          <li><a href="#sectionContact" class="linkContact fa fa-phone anchor">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main>
-    <figure class="figureProfile animated">
-      <img src="img/img_profile.png" alt="Thallys Bezerra" width="60%" height="60%">
-    </figure>
-    <div class="infoPerson">
-      <h1 class="namePerson animated">Thallys Bezerra</h1>
-      <h2 class="functionPerson animated">Web Interface Designer</h2>
-      <p class="animated fa fa-envelope">bezerra.thallys@gmail.com</p>
-      <p class="animated fa fa-linkedin-square">linkedin.com/thallysbezerra</p>
-      <p class="animated fa fa-map-marker">Rio de Janeiro - RJ - Brazil</p>
-    </div>
+
+    <section class="home">
+      <div class="container">
+        <figure class="figureProfile animated">
+          <img src="img/img_profile.png" alt="Thallys Bezerra">
+        </figure>
+        <div class="infoPerson">
+          <h1 class="namePerson animated">Thallys Bezerra</h1>
+          <h2 class="functionPerson animated">Web Interface Designer</h2>
+          <p class="animated fa fa-envelope">bezerra.thallys@gmail.com</p>
+          <p class="animated fa fa-linkedin-square">linkedin.com/thallysbezerra</p>
+          <p class="animated fa fa-map-marker">Rio de Janeiro - RJ - Brazil</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectionResume" class="sectionResume">
+      <div class="container">
+        <h1>Resume</h1>
+      </div>
+    </section>
+
+    <section id="sectionWorks" class="sectionWorks">
+      <div class="container">
+        <h1>Works</h1>
+      </div>
+    </section>
+
+    <section id="sectionContact" class="sectionContact">
+      <div class="container">
+        <h1>Contact</h1>
+      </div>
+    </section>
+
   </main>
+
+  <footer>
+    <div class="container">
+      <a href="#header" class="anchor linkHeader fa fa-angle-up fa-3x">
+    </div>
+  </footer>
+
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
