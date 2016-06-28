@@ -192,6 +192,7 @@ section:nth-child(even) {
   background-color: rgba(170,170,170,.15);
   opacity: 0;
   visibility: hidden;
+  z-index: -1;
   transition: .25s;
 }
 
