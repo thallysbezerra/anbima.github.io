@@ -172,7 +172,7 @@ article {
 }
 
 .figureProfile {
-  margin: 0 0 2em;
+  margin: 0 0 1em;
 }
 
 .figureProfile img {
@@ -365,7 +365,7 @@ h4 + .doubleList {
   }
 
   section section {
-    width: calc(100% - 390px);
+    width: calc(100% - 400px);
     margin-right: 100px;
   }
 
