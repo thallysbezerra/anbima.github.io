@@ -359,12 +359,17 @@ h4 + .doubleList {
   section section,
   aside {
     display: inline-block;
-    margin-right: 4.5em;
     vertical-align: top;
+    box-sizing: border-box;
   }
 
   section section {
-    width: 55%;
+    width: calc(100% - 490px);
+    margin-right: 100px;
+  }
+
+  aside {
+    width: 190px;
   }
 
   /* Main - Footer */
