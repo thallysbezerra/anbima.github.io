@@ -13,16 +13,35 @@ h1 {
   margin: 0;
 }
 
-h2.functionPerson {
-   color: #148dcd;
-   font: 30px Oswald;
-   margin-top: -8px;
+h2 {
+  color: #148dcd;
+  font: 30px Oswald;
+  margin-top: -8px;
 }
 
-.namePerson,
-.functionPerson,
-.infoPerson p {
-  display: none;
+h3 {
+  color: #333;
+  font: 50px Oswald;
+  letter-spacing: -1px;
+  margin: 0 0 1.25em;
+}
+
+h4 {
+  color: #148dcd;
+  font: 25px Oswald;
+  letter-spacing: -1px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: -.25em 0 0;
+}
+
+p {
+    margin: .5em 0;
 }
 
 .bounceInLeft {
@@ -116,6 +135,10 @@ main {
   box-sizing: border-box;
 }
 
+.container {
+  padding: 0 15px;
+}
+
 .fixedMenu + main {
   top: 0;
 }
@@ -128,6 +151,15 @@ section {
 
 section:nth-child(even) {
   background-color: #fff;
+}
+
+section section {
+  min-height: inherit;
+  padding: 0;
+}
+
+article {
+  margin-bottom: 5em;
 }
 
 .home {
@@ -179,6 +211,52 @@ section:nth-child(even) {
   left: -1.4em;
 }
 
+.namePerson,
+.functionPerson,
+.infoPerson p {
+  display: none;
+}
+
+.company {
+  font-size: 18px;
+}
+
+main ul li:before {
+  content: ".";
+  font-size: 1.25em;
+  margin-right: 5px;
+}
+
+.activities li,
+.school,
+.doubleList li span {
+  color: #888;
+}
+
+.academicEducation p,
+.complementaryEducation p {
+  margin: .25em;
+}
+
+.academicEducation p.school,
+.complementaryEducation p.school {
+  margin-bottom: 1em;
+}
+
+h4 + .doubleList {
+  margin-bottom: .75em;
+}
+
+.doubleList li {
+  position: relative;
+}
+
+.doubleList li span {
+  position: absolute;
+  left: 160px;
+  top: 5px;
+}
+
 /* Footer */
 
 .linkHeader {
@@ -212,7 +290,7 @@ section:nth-child(even) {
 
 /* Media Queries - Desktop */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
 
   /* Header - Desktop */
 
@@ -264,10 +342,25 @@ section:nth-child(even) {
 
   /* Main - Desktop */
 
+  .home .container {
+    padding-top: calc(50vh - 380px);
+  }
+
   .container {
-    max-width: 1280px;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+  section section,
+  aside {
+    display: inline-block;
+    margin-right: 4.5em;
+    vertical-align: top;
+  }
+
+  section section {
+    width: 55%;
   }
 
   /* Main - Footer */
