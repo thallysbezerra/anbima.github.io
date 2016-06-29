@@ -196,11 +196,12 @@ article {
 .infoPerson p {
   color: #333;
   font: 18px Source Sans Pro;
-  text-align: left;
+  font-weight: 300;
+  left: .5em;
   margin: .25em auto;
   position: relative;
+  text-align: left;
   width: 200px;
-  left: .5em;
 }
 
 .infoPerson p:before {
@@ -235,7 +236,8 @@ main ul li:before {
 .activities li,
 .school,
 .doubleList li span {
-  color: #999;
+  color: #666;
+  font-weight: 300;
 }
 
 .academicEducation p,
