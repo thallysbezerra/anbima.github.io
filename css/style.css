@@ -4,6 +4,8 @@ body {
   background-color: #eaeaea;
   position: relative;
   z-index: -2;
+  font-family: Source Sans Pro, Calibri, sans-serif;
+  color: #000;
 }
 
 h1 {
@@ -41,8 +43,7 @@ ul {
 }
 
 p {
-  color: #333;
-  font: 18px Source Sans Pro;
+  font-size: 18px;
   margin: .5em 0;
 }
 
@@ -232,7 +233,7 @@ main ul li:before {
 .activities li,
 .school,
 .doubleList li span {
-  color: #888;
+  color: #999;
 }
 
 .academicEducation p,
