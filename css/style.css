@@ -125,10 +125,6 @@ header.fixedMenu {
     width: 100vw;
 }
 
-.bgShade.fadeOut {
-  visibility: hidden;
-}
-
 /* Main */
 
 main {
