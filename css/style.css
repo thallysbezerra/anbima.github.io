@@ -7,6 +7,7 @@ body {
   font-family: Source Sans Pro, Calibri, sans-serif;
   color: #333;
   font-size: 18px;
+  overflow: visible;
 }
 
 h1 {
@@ -404,6 +405,10 @@ h4 + .doubleList {
 }
 
 /* Tasty Burger Menu */
+
+body.bodyStopped {
+  overflow: hidden;
+}
 
 .burgerMenu {
   position: relative;
