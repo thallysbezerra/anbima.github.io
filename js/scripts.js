@@ -33,6 +33,7 @@ $(".burgerMenu").click(function() {
         $(".linksMenu").addClass("showMenu");
         $(".navMenu").removeClass("bounceOutUp");
         $(".navMenu").addClass("bounceInDown");
+        $(".bgShade").removeClass("hideShade");
         $(".bgShade").addClass("showShade");
     }
     // on even clicks do this
@@ -42,6 +43,7 @@ $(".burgerMenu").click(function() {
         $(".navMenu").removeClass("bounceInDown");
         $(".navMenu").addClass("bounceOutUp");
         $(".bgShade").removeClass("showShade");
+        $(".bgShade").addClass("hideShade");
     }
 });
 
@@ -53,6 +55,7 @@ $('.anchor').click(function() {
     $(".navMenu").removeClass("bounceInDown");
     $(".navMenu").addClass("bounceOutUp");
     $(".bgShade").removeClass("showShade");
+    $(".bgShade").addClass("hideShade");
     count++;
     $anchor.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
