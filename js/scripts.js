@@ -35,6 +35,7 @@ $(".burgerMenu").click(function() {
         $(".navMenu").addClass("bounceInDown");
         $(".bgShade").removeClass("hideShade");
         $(".bgShade").addClass("showShade");
+        $("body").addClass("bodyStopped");
     }
     // on even clicks do this
     else if (isEven(count) === true) {
@@ -44,6 +45,7 @@ $(".burgerMenu").click(function() {
         $(".navMenu").addClass("bounceOutUp");
         $(".bgShade").removeClass("showShade");
         $(".bgShade").addClass("hideShade");
+        $("body").removeClass("bodyStopped");
     }
 });
 
@@ -56,6 +58,7 @@ $('.anchor').click(function() {
     $(".navMenu").addClass("bounceOutUp");
     $(".bgShade").removeClass("showShade");
     $(".bgShade").addClass("hideShade");
+    $("body").removeClass("bodyStopped");
     count++;
     $anchor.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
