@@ -117,19 +117,23 @@ header.fixedMenu {
 }
 
 .bgShade {
-    background-color: rgba(0,0,0,.75);
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s linear;
+  background-color: rgba(0,0,0,.75);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  visibility: hidden;
+  transition: opacity 1s linear;
 }
 
 .bgShade.showShade {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
+}
+
+.bgShade.hideShade {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* Main */
