@@ -33,8 +33,7 @@ $(".burgerMenu").click(function() {
         $(".linksMenu").addClass("showMenu");
         $(".navMenu").removeClass("bounceOutUp");
         $(".navMenu").addClass("bounceInDown");
-        $(".bgShade").removeClass("fadeOut");
-        $(".bgShade").addClass("fadeIn");
+        $(".bgShade").addClass("showShade");
     }
     // on even clicks do this
     else if (isEven(count) === true) {
@@ -42,8 +41,7 @@ $(".burgerMenu").click(function() {
         $(".burgerMenu").removeClass("showMenu");
         $(".navMenu").removeClass("bounceInDown");
         $(".navMenu").addClass("bounceOutUp");
-        $(".bgShade").removeClass("fadeIn");
-        $(".bgShade").addClass("fadeOut");
+        $(".bgShade").removeClass("showShade");
     }
 });
 
@@ -54,8 +52,7 @@ $('.anchor').click(function() {
     $(".burgerMenu").removeClass("showMenu");
     $(".navMenu").removeClass("bounceInDown");
     $(".navMenu").addClass("bounceOutUp");
-    $(".bgShade").removeClass("fadeIn");
-    $(".bgShade").addClass("fadeOut");
+    $(".bgShade").removeClass("showShade");
     count++;
     $anchor.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
