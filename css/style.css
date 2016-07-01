@@ -116,17 +116,20 @@ header.fixedMenu {
   background-color: #1070a4;
 }
 
-.bgShade.fadeIn,
-.bgShade.fadeOut {
+.bgShade {
     background-color: rgba(0,0,0,.75);
     height: 100vh;
     position: fixed;
     top: 0;
     width: 100vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s linear;
 }
 
-.bgShade.fadeOut {
-  visibility: hidden;
+.bgShade.showShade {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Main */
