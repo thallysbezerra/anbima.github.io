@@ -316,25 +316,38 @@ button {
   text-transform: uppercase;
   padding: 10px 0;
   cursor: pointer;
+  outline: none;
 }
 
 input[type=text],
 input[type=email],
 input[type=tel],
 textarea {
-  border: 1px solid #ddd;
+  border: 2px solid transparent;
   font-family: Open Sans;
   margin: 5px 0;
-  padding: 13px 12px;
-  width: calc(100% - 76px);
+  padding: 12px 12px;
+  width: calc(100% - 78px);
+  background-color: #eaeaea;
+  outline: none;
+  transition: .25s;
+  border-left: none;
+  border-right: none;
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  border-bottom-color: #148dcd;
 }
 
 .icon {
-  background-color: #ddd;
+  background-color: #148dcd;
   border-radius: 7px 0 0 7px;
   box-sizing: border-box;
   color: #fff;
@@ -353,23 +366,23 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-   color: #999;
-   font-weight: 300;
+   color: #0c547b;
+   font-weight: 400;
 }
 
 :-moz-placeholder {
-   color: #999;
-   font-weight: 300;
+   color: #0c547b;
+   font-weight: 400;
 }
 
 ::-moz-placeholder {
-   color: #999;
-   font-weight: 300;
+   color: #0c547b;
+   font-weight: 400;
 }
 
 :-ms-input-placeholder {  
-   color: #999;
-   font-weight: 300;
+   color: #0c547b;
+   font-weight: 400;
 }
 
 .sectionContact .buttonArea {text-align: right;margin-top: 10px;}
@@ -400,8 +413,8 @@ textarea {
 
 .linkHeader:before {
   color: #aaa;
-  margin-left: 8px;
-  margin-top: -4px;
+  margin-left: 10px;
+  margin-top: 0px;
   transition: .25s;
 }
 
