@@ -6,7 +6,7 @@ body {
   z-index: -2;
   font-family: Open Sans, Calibri, sans-serif;
   color: #333;
-  font-size: 18px;
+  /* font-size: 18px; */
   overflow: visible;
 }
 
@@ -46,7 +46,7 @@ ul {
 }
 
 p {
-  font-size: 18px;
+  /* font-size: 18px; */
   margin: .5em 0;
 }
 
@@ -213,13 +213,12 @@ article {
 
 .infoPerson p {
   color: #333;
-  font: 18px Open Sans;
   font-weight: 300;
   text-align: left;
   margin: .25em auto;
   position: relative;
-  width: 205px;
-  left: .5em;
+  width: 200px;
+  left: 12px;
 }
 
 .infoPerson p:before {
@@ -323,10 +322,10 @@ input[type=text],
 input[type=email],
 input[type=tel],
 textarea {
-  border: 1px solid #eaeaea;
+  border: 1px solid #ddd;
   font-family: Open Sans;
   margin: 5px 0;
-  padding: 12px 12px 13px;
+  padding: 13px 12px;
   width: calc(100% - 76px);
 }
 
@@ -335,7 +334,7 @@ textarea {
 }
 
 .icon {
-  background-color: #ccc;
+  background-color: #ddd;
   border-radius: 7px 0 0 7px;
   box-sizing: border-box;
   color: #fff;
