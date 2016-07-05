@@ -343,11 +343,11 @@ input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
 textarea:focus {
-  border-bottom-color: #148dcd;
+  border-bottom-color: #0c547b;
 }
 
 .icon {
-  background-color: #148dcd;
+  background-color: #0c547b;
   border-radius: 7px 0 0 7px;
   box-sizing: border-box;
   color: #fff;
