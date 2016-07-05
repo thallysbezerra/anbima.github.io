@@ -4,7 +4,7 @@ body {
   background-color: #eaeaea;
   position: relative;
   z-index: -2;
-  font-family: Source Sans Pro, Calibri, sans-serif;
+  font-family: Open Sans, Calibri, sans-serif;
   color: #333;
   font-size: 18px;
   overflow: visible;
@@ -153,6 +153,11 @@ main {
   padding: 0 15px;
 }
 
+.sectionHome,
+.sectionContact {
+  text-align: center;
+}
+
 .fixedMenu + main {
   top: 0;
 }
@@ -176,7 +181,12 @@ article {
   margin-bottom: 5em;
 }
 
-.home {
+.sectionResume .downloadPDF {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.sectionHome {
   padding-top: calc(2em + 80px);
 }
 
@@ -194,22 +204,21 @@ article {
   display: block;
   margin: 0 auto;
   max-width: 180px;
-  width: 60%;
+  width: 50%;
 }
 
 .infoPerson {
-  text-align: center;
   margin-top: -5px;
 }
 
 .infoPerson p {
   color: #333;
-  font: 18px Source Sans Pro;
+  font: 18px Open Sans;
   font-weight: 300;
   text-align: left;
   margin: .25em auto;
   position: relative;
-  width: 200px;
+  width: 205px;
   left: .5em;
 }
 
@@ -270,8 +279,101 @@ h4 + .doubleList {
 .doubleList li span {
   position: absolute;
   left: 180px;
-  top: 5px;
+  top: 6px;
 }
+
+.linkDownload,
+.buttonWrapper {
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 7px;
+  transition: .25s;
+}
+
+.linkDownload {
+  background-color: #a41c20;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.linkDownload:hover {
+  background-color: #e71d24;
+}
+
+.buttonWrapper {
+  background-color: #0c547b;
+}
+
+.buttonWrapper:hover {
+  background-color: #148dcd;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  border: 1px solid #eaeaea;
+  font-family: Open Sans;
+  margin: 5px 0;
+  padding: 12px 12px 13px;
+  width: calc(100% - 76px);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.icon {
+  background-color: #ccc;
+  border-radius: 7px 0 0 7px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 5px 0;
+  vertical-align: top;
+  font-size: 25px;
+}
+
+.icon:before {
+  position: relative;
+  top: 10px;
+  left: 7px;
+}
+
+::-webkit-input-placeholder {
+   color: #999;
+   font-weight: 300;
+}
+
+:-moz-placeholder {
+   color: #999;
+   font-weight: 300;
+}
+
+::-moz-placeholder {
+   color: #999;
+   font-weight: 300;
+}
+
+:-ms-input-placeholder {  
+   color: #999;
+   font-weight: 300;
+}
+
+.sectionContact .buttonArea {text-align: right;margin-top: 10px;}
 
 /* Footer */
 
@@ -302,106 +404,6 @@ h4 + .doubleList {
   margin-left: 8px;
   margin-top: -4px;
   transition: .25s;
-}
-
-/* Media Queries - Desktop */
-
-@media screen and (min-width: 768px) {
-
-  /* Header - Desktop */
-
-  header .bgMenu {
-    background-color: #148dcd;
-  }
-    
-  div.burgerMenu {
-    display: none;
-  }
-
-  .navMenu {
-    z-index: 0;
-  }
-
-  .linksMenu {
-    display: block;
-    text-align: center;
-  }
-
-  .linksMenu li {
-    display: inline-block;
-  }
-
-  .navMenu .linksMenu li a {
-    background-color: transparent;
-    color: #0c547b;
-    padding: 22px 1.2em 24px .8em;
-    transition: .25s;
-  }
-
-  .navMenu .linksMenu li a:hover {
-    color: #fff;
-  }
-
-  .navMenu.bounceOutUp {
-    animation-name: unset;
-  }
-
-  .figureProfile.animated.zoomInUp img {
-    max-width: inherit;
-    width: 360px;
-  }
-
-  .bgShade.fadeIn,
-  .bgShade.fadeOut {
-    display: none;
-  }
-
-  /* Main - Desktop */
-
-  .home .container {
-    padding-top: calc(50vh - 380px);
-  }
-
-  .container {
-    display: block;
-    margin: 0 auto;
-    max-width: 1280px;
-  }
-  
-  .sectionResume .container {
-    max-width: 1000px;
-  }
-
-  section section,
-  aside {
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-  }
-
-  section section {
-    width: calc(100% - 400px);
-    margin-right: 100px;
-  }
-
-  aside {
-    width: 200px;
-  }
-
-  /* Main - Footer */
-
-  .linkHeader {
-    right: 5%;
-  }
-
-  .linkHeader:hover {
-    background-color: rgba(20,141,205,.15);
-  }
-
-  .linkHeader:hover:before {
-    color: #148dcd;
-  }
-
 }
 
 /* Tasty Burger Menu */

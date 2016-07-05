@@ -8,8 +8,9 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/desktop.css">
   <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,600italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 </head>
 <body>
@@ -32,7 +33,7 @@
 
   <main>
     <!-- Home -->
-    <section class="home">
+    <section class="sectionHome">
       <div class="container">
         <figure class="figureProfile animated">
           <img src="img/img_profile.png" alt="Thallys Bezerra">
@@ -119,6 +120,9 @@
             </ul>
           </article>
         </aside>
+        <div class="downloadPDF">
+          <a href="files/ThallysBezerra_Resume.pdf" class="linkDownload fa fa-download" target="_blank">PDF</a>
+        </div>
       </div>
     </section>
     <!-- Works -->
@@ -131,6 +135,13 @@
     <section id="sectionContact" class="sectionContact">
       <div class="container">
         <h3>Contact</h3>
+        <div><span class="icon fa fa-user"></span><input type="text" name="name" placeholder="Name"></div>
+        <div><span class="icon fa fa-envelope"></span><input type="email" name="email" placeholder="Email"></div>
+        <div><span class="icon fa fa-phone"></span><input type="tel" name="tel" placeholder="Phone"></div>
+        <div><span class="icon fa fa-pencil"></span><textarea placeholder="Message" rows="4"></textarea></div>
+        <div class="buttonArea">
+          <button type="submit"><span class="buttonWrapper fa fa-send">Send</span></button>
+        </div>
       </div>
     </section>
 

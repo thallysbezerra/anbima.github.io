@@ -1,0 +1,103 @@
+/* Media Queries - Desktop */
+
+@media screen and (min-width: 768px) {
+
+  /* Header */
+
+  header .bgMenu {
+    background-color: #148dcd;
+  }
+    
+  div.burgerMenu {
+    display: none;
+  }
+
+  .navMenu {
+    z-index: 0;
+  }
+
+  .linksMenu {
+    display: block;
+    text-align: center;
+  }
+
+  .linksMenu li {
+    display: inline-block;
+  }
+
+  .navMenu .linksMenu li a {
+    background-color: transparent;
+    color: #0c547b;
+    padding: 22px 1.2em 24px .8em;
+    transition: .25s;
+  }
+
+  .navMenu .linksMenu li a:hover {
+    color: #fff;
+  }
+
+  .navMenu.bounceOutUp {
+    animation-name: unset;
+  }
+
+  .figureProfile.animated.zoomInUp img {
+    max-width: inherit;
+    width: 360px;
+  }
+
+  .bgShade.fadeIn,
+  .bgShade.fadeOut {
+    display: none;
+  }
+
+  /* Main */
+
+  .home .container {
+    padding-top: calc(50vh - 380px);
+  }
+
+  .container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+  
+  .sectionResume .container {
+    max-width: 1000px;
+  }
+
+  section section,
+  aside {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  section section {
+    width: calc(100% - 400px);
+    margin-right: 100px;
+  }
+
+  aside {
+    width: 200px;
+  }
+
+  .sectionContact .container {
+    max-width: 500px;
+  }
+
+  /* Footer */
+
+  .linkHeader {
+    right: 5%;
+  }
+
+  .linkHeader:hover {
+    background-color: rgba(20,141,205,.15);
+  }
+
+  .linkHeader:hover:before {
+    color: #148dcd;
+  }
+
+}
