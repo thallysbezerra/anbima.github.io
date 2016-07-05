@@ -346,10 +346,10 @@ textarea:focus {
   border-bottom-color: #148dcd;
 }
 
-input[type=text]:focus + span,
-input[type=email]:focus + span,
-input[type=tel]:focus + span,
-textarea:focus + span {
+input[type=text]:focus + .icon,
+input[type=email]:focus + .icon,
+input[type=tel]:focus + .icon,
+textarea:focus + .icon {
   background-color: #148dcd;
 }
 
@@ -364,6 +364,7 @@ textarea:focus + span {
   margin: 5px 0;
   vertical-align: top;
   font-size: 25px;
+  transition: .25s;
 }
 
 .icon:before {
