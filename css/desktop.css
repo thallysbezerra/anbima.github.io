@@ -86,6 +86,17 @@
     max-width: 500px;
   }
 
+  .sectionWorks section {
+    width: 100%;
+    position: relative;
+    margin-right: 0;
+  }
+
+  .sectionWorks article {
+    display: inline-block;
+    width: 50%;
+  }
+
   /* Footer */
 
   .linkHeader {
@@ -98,6 +109,47 @@
 
   .linkHeader:hover:before {
     color: #148dcd;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .sectionWorks article {
+    width: 25%;
+  }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+  .sectionWorks a {
+    background-color: transparent;
+    transition: all .25s;
+    visibility: hidden;
+  }
+
+  .sectionWorks article:hover a {
+    background-color: rgba(20,141,205,.75);
+    visibility: visible;
+  }
+
+  .sectionWorks article h5,
+  .sectionWorks article p {
+    position: absolute;  
+    margin-top: 45%;
+    opacity: 0;
+    transition: all .25s;
+  }
+
+  .sectionWorks article:hover h5 {
+    margin-top: 40%;
+    opacity: 1;
+  }
+
+  .sectionWorks article:hover p {
+    margin-top: 50%;
+    opacity: 1;
   }
 
 }

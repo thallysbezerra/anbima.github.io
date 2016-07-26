@@ -6,7 +6,6 @@ body {
   z-index: -2;
   font-family: Open Sans, Calibri, sans-serif;
   color: #333;
-  /* font-size: 18px; */
   overflow: visible;
 }
 
@@ -29,6 +28,7 @@ h3 {
   letter-spacing: -1px;
   margin: 0 0 1.25em;
   text-align: center;
+  position: relative;
 }
 
 h4 {
@@ -46,8 +46,11 @@ ul {
 }
 
 p {
-  /* font-size: 18px; */
   margin: .5em 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .bounceInLeft {
@@ -151,6 +154,10 @@ main {
 
 .container {
   padding: 0 15px;
+}
+
+.sectionWorks .container {
+  padding: 0;
 }
 
 .sectionHome,
@@ -306,6 +313,42 @@ h4 + .doubleList {
 
 .buttonWrapper:hover {
   background-color: #148dcd;
+}
+
+.sectionWorks {
+  padding-bottom: 0;
+  min-height: auto;
+}
+
+.sectionWorks article {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+  position: relative;
+  margin-top: -5px;
+}
+
+.sectionWorks a {
+  background-color: rgba(20,141,205,.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 5px);
+}
+
+.sectionWorks h5,
+.sectionWorks p {
+  color: #fff;
+  margin: 0 0 0 25px;
+}
+
+.sectionWorks h5 {
+  font: 22px Oswald;
+  margin-top: 40%;
+}
+
+.sectionWorks p {
+  font-weight: 300;
 }
 
 button {
