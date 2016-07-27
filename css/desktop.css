@@ -166,13 +166,11 @@
   .sectionWorks article:hover h5 {
     margin-top: 40%;
     opacity: 1;
-    transition-delay: .25s;
   }
 
   .sectionWorks article:hover p {
     margin-top: 50%;
     opacity: 1;
-    transition-delay: .5s;
   }
 
   textarea {
