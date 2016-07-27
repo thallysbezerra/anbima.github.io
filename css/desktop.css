@@ -125,8 +125,7 @@
   }
 
   footer {
-    
-height: 130px;
+    height: 130px;
   }
 
   footer .devTools {
@@ -135,6 +134,10 @@ height: 130px;
 
   footer .share {
     float: right;
+  }
+
+  .sectionContact {
+    min-height: calc(100vh - 130px);
   }
 
 }
