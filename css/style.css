@@ -1,7 +1,6 @@
 /* Global */
 
 body {
-  background-color: #eaeaea;
   position: relative;
   z-index: -2;
   font-family: Open Sans, Calibri, sans-serif;
@@ -10,7 +9,7 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: #fff;
   font: 50px Oswald;
   letter-spacing: -1px;
   margin: 0;
@@ -62,7 +61,6 @@ a {
 header .bgMenu {
   height: 80px;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
   box-sizing: border-box;
   text-align: right;
 }
@@ -147,7 +145,7 @@ main {
   position: relative;
   top: -80px;
   z-index: -1;
-  padding: 0;
+  padding: 0 0 180px 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -175,10 +173,6 @@ section {
   min-height: 100vh;
 }
 
-section:nth-child(even) {
-  background-color: #fff;
-}
-
 section section {
   min-height: inherit;
   padding: 0;
@@ -195,6 +189,7 @@ article {
 
 .sectionHome {
   padding-top: calc(2em + 80px);
+  background-color: #333;
 }
 
 .figureProfile {
@@ -219,7 +214,7 @@ article {
 }
 
 .infoPerson p {
-  color: #333;
+  color: #ddd;
   font-weight: 300;
   text-align: left;
   margin: .25em auto;
@@ -362,21 +357,25 @@ button {
   outline: none;
 }
 
+.sectionContact div div {
+  position: relative;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
 textarea {
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   font-family: Open Sans;
-  margin: 5px 0;
-  padding: 12px 12px;
-  width: calc(100% - 78px);
-  background-color: #eaeaea;
+  margin: 5px 0 10px;
+  padding: 12px 12px 12px 40px;
+  width: calc(100% - 52px);
   outline: none;
   transition: .25s;
   border-left: none;
   border-right: none;
-  transition: .5s;
+  transition: border-color .5s;
+  border-bottom-color: #0c547b;
 }
 
 textarea {
@@ -394,46 +393,40 @@ input[type=text]:focus + .icon,
 input[type=email]:focus + .icon,
 input[type=tel]:focus + .icon,
 textarea:focus + .icon {
-  background-color: #148dcd;
+  color: #148dcd;
 }
 
 .icon {
-  background-color: #0c547b;
-  border-radius: 0 7px 7px 0;
-  box-sizing: border-box;
-  color: #fff;
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  margin: 5px 0;
-  vertical-align: top;
-  font-size: 25px;
-  transition: .25s;
+  color: #0c547b;
+  position: absolute;
+  left: 0;
+  font-size: 22px;
+  transition: .5s;
 }
 
 .icon:before {
   position: relative;
   top: 10px;
-  left: 7px;
+  left: 8px;
 }
 
 ::-webkit-input-placeholder {
-   color: #0c547b;
+   color: #666;
    font-weight: 400;
 }
 
 :-moz-placeholder {
-   color: #0c547b;
+   color: #666;
    font-weight: 400;
 }
 
 ::-moz-placeholder {
-   color: #0c547b;
+   color: #666;
    font-weight: 400;
 }
 
 :-ms-input-placeholder {  
-   color: #0c547b;
+   color: #666;
    font-weight: 400;
 }
 
@@ -441,20 +434,31 @@ textarea:focus + .icon {
 
 /* Footer */
 
+footer {
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+  padding-bottom: 50px; 
+  position: absolute;
+  top: inherit;
+  bottom: 0;
+  height: 260px;
+  width: 100%;
+}
+
 .linkHeader {
   width: 50px;
   height: 50px;
-  background-color: transparent;
   border-radius: 50%;
   display: block;
   position: fixed;
   bottom: 0;
   right: 0;
   margin: 15px;
-  background-color: rgba(170,170,170,.15);
+  background-color: rgba(12,84,123,.5);
   opacity: 0;
   visibility: hidden;
-  z-index: -1;
+  z-index: 0;
   transition: .25s;
 }
 
@@ -464,10 +468,72 @@ textarea:focus + .icon {
 }
 
 .linkHeader:before {
-  color: #aaa;
+  color: #0c547b;
   margin-left: 10px;
   margin-top: 0px;
   transition: .25s;
+}
+
+.linkHeader:after {
+  border-radius: 50%;
+  content:"";
+  background-color: rgba(255,255,255,.5);
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+}
+
+footer ul {
+  margin: 25px 0;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 12px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+footer .titleFooter {
+  display: block;
+  margin-bottom: 5px;
+}
+
+footer li a {
+  color: #333;
+  font-size: 28px;
+  transition: .25s;
+}
+
+footer .fa-codepen:hover {
+  color: #fcd000;
+}
+
+footer .fa-github:hover {
+  color: #913399;
+}
+
+footer .fa-facebook:hover {
+  color: #3b5998;
+}
+
+footer .fa-google-plus:hover {
+  color: #d34836;
+}
+
+footer .fa-linkedin:hover {
+  color: #007bb5;
+}
+
+footer .fa-twitter:hover {
+  color: #55acee;
+}
+
+footer .fa:before {
+  margin-right: 0;
 }
 
 /* Tasty Burger Menu */
