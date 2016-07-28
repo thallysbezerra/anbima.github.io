@@ -1,0 +1,98 @@
+/* Header */
+
+header .bgMenu {
+  background-color: #148dcd;
+}
+
+div.burgerMenu {
+  display: none;
+}
+
+.navMenu {
+  z-index: 0;
+}
+
+.linksMenu {
+  display: block;
+  text-align: center;
+}
+
+.linksMenu li {
+  display: inline-block;
+}
+
+.navMenu .linksMenu li a {
+  background-color: transparent;
+  color: #0c547b;
+  padding: 22px 1.2em 24px .8em;
+  transition: .25s;
+}
+
+.navMenu .linksMenu li a:hover {
+  color: #fff;
+}
+
+.navMenu.bounceOutUp {
+  animation-name: unset;
+}
+
+.figureProfile.animated.zoomInUp img {
+  max-width: inh
+}
+
+.bgShade.fadeIn,
+.bgShade.fadeOut {
+  display: none;
+}
+
+/* Main */
+
+.windowWorks section {
+    padding-top: calc(2em + 80px);
+}
+
+h3 {
+  text-align: left;
+}
+
+main article > ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+main ul li {
+  color: #666;
+  font-size: .8em;
+  margin-bottom: 5px;
+}
+
+main ul li:before {
+  content: none;
+}
+
+main ul li span {
+  color: #333;
+  font-weight: 600;
+  display: block;
+}
+
+main ul li ul {
+  margin-top: 10px;
+}
+
+.logoFocus {
+  background: url("../img/logo_focusnetworks.jpg") no-repeat;
+  background-size: 80%;
+  display: block;
+  width: 192px;
+  height: 50px;
+}
+
+.logoLumis {
+  background: url("../img/logo_lumis.jpg") no-repeat;
+  background-size: 60%;
+  display: block;
+  width: 138px;
+  height: 35px;
+}

@@ -78,10 +78,6 @@
     margin-right: 100px;
   }
 
-  aside {
-    width: 200px;
-  }
-
   .sectionContact .container,
   footer .container {
     max-width: 500px;
@@ -105,7 +101,7 @@
   }
 
   .linkHeader:hover {
-    background-color: rgba(20,141,205,.25);
+    background-color: rgba(20,141,205,.5);
   }
 
   .linkHeader:hover:before {
