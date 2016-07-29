@@ -53,12 +53,26 @@ div.burgerMenu {
 
 h3 {
   text-align: left;
+  margin-bottom: 0;
 }
 
-main article > ul {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 10px;
+h4 {
+  text-transform: none;
+}
+
+article {
+    width: calc(100% - 400px);
+    margin: 40px 50px 0 0;
+    display: inline-block;
+}
+
+aside {
+  margin-top: 90px;
+}
+
+aside > ul {
+  border-left: 1px solid #ddd;
+  padding: 20px 0 20px 50px;
 }
 
 main ul li {
@@ -74,11 +88,11 @@ main ul li:before {
 main ul li span {
   color: #333;
   font-weight: 600;
-  display: block;
+  margin-right: .25em;
 }
 
 main ul li ul {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .logoFocus {
