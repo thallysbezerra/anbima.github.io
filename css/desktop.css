@@ -71,6 +71,7 @@
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
+    width: 100%;
   }
 
   section section {
@@ -98,14 +99,16 @@
 
   .linkHeader {
     right: 5%;
+    margin: 22px;
   }
 
   .linkHeader:hover {
-    background-color: rgba(20,141,205,.5);
+    margin: 16px;
   }
 
   .linkHeader:hover:before {
     color: #148dcd;
+    font-size: 60px;
   }
 
 }

@@ -449,15 +449,10 @@ footer {
 }
 
 .linkHeader {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: block;
   position: fixed;
   bottom: 0;
   right: 0;
   margin: 15px;
-  background-color: rgba(12,84,123,.5);
   opacity: 0;
   visibility: hidden;
   z-index: 0;
@@ -471,20 +466,8 @@ footer {
 
 .linkHeader:before {
   color: #0c547b;
-  margin-left: 10px;
-  margin-top: 0px;
+  font-size: 45px;
   transition: .25s;
-}
-
-.linkHeader:after {
-  border-radius: 50%;
-  content:"";
-  background-color: rgba(255,255,255,.5);
-  position: absolute;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  z-index: -1;
 }
 
 footer ul {
