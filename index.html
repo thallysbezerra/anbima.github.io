@@ -192,7 +192,7 @@
           <li class="titleFooter">Share</li>
           <li><a href="javascript:fbshareCurrentPage()" target="_blank" class="linkResume fa fa-facebook"></a></li>
           <li><a href="https://plus.google.com/share?url=WWW.SITE.COM" target="_blank" class="linkContact fa fa-google-plus"></a></li>
-          <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=WWW.SITE.COM&title=Thallys%20Bezerra&summary=Web%20Interface%20Designer&source=" target="_blank" class="linkContact fa fa-linkedin"></a></li>
+          <li><a href="javascript:linkedinShareCurrentPage()" target="_blank" class="linkContact fa fa-linkedin"></a></li>
           <li><a href="javascript:twitterShareCurrentPage()" target="_blank" class="linkWorks fa fa-twitter"></a></li>
         </ul>
     </div>
@@ -205,6 +205,10 @@
     return false; }
     function twitterShareCurrentPage()
         {window.open("https://twitter.com/home?status="+escape(window.location.href), '_blank');
+        return false;
+    }
+    function linkedinShareCurrentPage()
+        {window.open("https://www.linkedin.com/shareArticle?mini=true&url="+escape(window.location.href)+"", '_blank');
         return false;
     }
 </script>
