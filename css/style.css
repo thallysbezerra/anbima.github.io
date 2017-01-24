@@ -39,9 +39,9 @@ h4 {
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: -.25em 0 0;
+  list-style: none;
+  padding: 0;
+  margin: -.25em 0 0;
 }
 
 p {
@@ -49,7 +49,7 @@ p {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .bounceInLeft {
@@ -66,8 +66,8 @@ header .bgMenu {
 }
 
 header.fixedMenu {
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 .navMenu {
@@ -82,7 +82,7 @@ header.fixedMenu {
 .linksMenu {
   display: none;
   list-style: none;
-  margin: -4px 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -411,28 +411,28 @@ textarea:focus + .icon {
 }
 
 ::-webkit-input-placeholder {
-   color: #666;
-   font-weight: 400;
+ color: #666;
+ font-weight: 400;
 }
 
 :-moz-placeholder {
-   color: #666;
-   font-weight: 400;
+ color: #666;
+ font-weight: 400;
 }
 
 ::-moz-placeholder {
-   color: #666;
-   font-weight: 400;
+ color: #666;
+ font-weight: 400;
 }
 
 :-ms-input-placeholder {  
-   color: #666;
-   font-weight: 400;
+ color: #666;
+ font-weight: 400;
 }
 
 .sectionContact .buttonArea {
   margin-top: 10px;
-  }
+}
 
 /* Footer */
 
