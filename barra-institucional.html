@@ -1,0 +1,84 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+<nav class="bar-inst">
+	<div class="area-esq">
+		<a href="http://www.anbima.com.br/pt_br/informar/informar.htm" target="_blank" class="area-informar">Informar</a>
+		<a href="http://www.anbima.com.br/pt_br/representar/representar.htm" target="_blank" class="area-representar">Representar</a>
+	</div>
+	<a href="http://www.anbima.com.br/pt_br/index.htm" target="_blank">
+		<img src="bar-inst-logo.png" alt="Anbima" class="bar-inst-logo">
+	</a>
+	<div class="area-dir">
+		<a href="http://www.anbima.com.br/pt_br/autorregular/autorregular.htm" target="_blank" class="area-autorregular">Autorregular</a>
+		<a href="http://www.anbima.com.br/pt_br/educar/educar.htm" target="_blank" class="area-educar">Educar</a>
+	</div>
+</nav>
+
+<style>
+	body {
+		margin: 0;
+	}
+	.bar-inst {
+		background-color: #4c4d4f;
+		border-bottom: 1px solid #ddd;
+		font-family: calibri, sans-serif;
+		height: 45px;
+	}
+	.bar-inst-logo {
+		position: absolute;
+		left: calc(50% - 51px);
+		top: 0;
+	}
+	.area-esq {
+		float: left;
+		width: calc(50% - 51px);
+		text-align: right;
+	}
+	.area-dir {
+		float: right;
+		width: calc(50% - 51px);
+	}
+	.bar-inst a {
+		border-bottom: 3px solid #4c4d4f;
+		color: #e6e7e8;
+		font-size: 18px;
+		line-height: 45px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all .2s;
+	}
+	.bar-inst a:hover {
+		color: #fff;
+	}
+	.area-esq a {
+		margin-right: 70px;
+	}
+	.area-dir a {
+		margin-left: 70px;
+	}
+	a.area-informar:hover {
+		border-color: #80c342;
+	}
+	a.area-representar:hover {
+		border-color: #0095d9;
+	}
+	a.area-autorregular:hover {
+		border-color: #b7ba9f;
+	}
+	a.area-educar:hover {
+		border-color: #fcaf17;
+	}
+	@media (max-width: 1023px) {
+		.area-esq a {
+			margin-right: 35px;
+		}
+		.area-dir a {
+			margin-left: 35px;
+		}
+	}
+	@media (max-width: 767px) {
+		.area-esq,
+		.area-dir {
+			display: none;
+		}
+	}
+</style>
