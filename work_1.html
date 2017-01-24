@@ -16,18 +16,7 @@
 </head>
 <body>
 
-  <header id="header" class="animated">
-    <div class="bgMenu">
-      <div class="burgerMenu">
-        <div class="burger"></div>
-      </div>
-      <nav class="navMenu animated ">
-        <ul class="linksMenu">
-          <li><a href="index.html" class="linkResume fa fa-home anchor">Home</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <header id="header" class="animated"></header>
 
   <main class="windowWorks">
     <div class="container">
@@ -109,5 +98,10 @@
 </footer>
 
 <script type="text/javascript" src="js/scripts.js"></script>
+<script>
+  $(function () {
+    $("#header").load("header.html");
+  });
+</script>
 </body>
 </html>
