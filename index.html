@@ -12,23 +12,12 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,600italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
   <div class="bgShade animated"></div>
 
   <header id="header" class="animated">
-    <div class="bgMenu">
-      <div class="burgerMenu">
-        <div class="burger"></div>
-      </div>
-      <nav class="navMenu animated ">
-        <ul class="linksMenu">
-          <li><a href="#sectionResume" class="linkResume fa fa-file-text anchor">Resume</a></li>
-          <li><a href="#sectionWorks" class="linkWorks fa fa-suitcase anchor">Works</a></li>
-          <li><a href="#sectionContact" class="linkContact fa fa-phone anchor">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
   </header>
 
   <main>
@@ -201,5 +190,10 @@
   </footer>
 
 <script type="text/javascript" src="js/scripts.js"></script>
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+		});
+	</script>
 </body>
 </html>
